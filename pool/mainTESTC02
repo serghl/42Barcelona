@@ -1,0 +1,193 @@
+--- EX 00 ---
+
+int main()
+{
+
+char destino[] = "123456789";
+char src[] = "pepe";
+char *dest;
+
+    dest = ft_strcpy(destino,src);
+
+    printf("SRC --> %s\t DESTINO --> %s\n",src,dest );
+
+return 0;
+}
+
+--- EX 01 ---
+
+int main()
+{
+
+char destino[] = "123456789";
+char src[] = "pepe";
+char *dest;
+
+    dest = ft_strncpy(destino,src, 4);
+
+    printf("SRC --> %s\t DESTINO --> %s\n",src,dest );
+
+return 0;
+}
+
+--- EX 02 ---
+
+
+int main ()
+{
+char valido[] = "aEdRftgw";
+char invalido[] = "wdeR4#cTf9";
+
+int retValido = ft_str_is_alpha(valido);
+int retInvalido = ft_str_is_alpha(invalido);
+
+printf("RetValido = %d\t RetInvalido = %d\n", retValido, retInvalido);
+return 0;
+}
+
+--- EX 03
+
+
+int main ()
+{
+char valido[] = "425657464";
+char invalido[] = "45645643T6";
+
+int retValido = ft_str_is_numeric(valido);
+int retInvalido = ft_str_is_numeric(invalido);
+
+printf("RetValido = %d\t RetInvalido = %d\n", retValido, retInvalido);
+return 0;
+}
+
+--- Ex04 ---
+
+
+int main ()
+{
+char valido[] = "asddsa";
+char invalido[] = "asdsaddFsdasd";
+char vacio[] = "\0";
+
+int retValido = ft_str_is_lowercase(valido);
+int retInvalido = ft_str_is_lowercase(invalido);
+int retVacio = ft_str_is_lowercase(vacio);
+
+printf("RetValido = %d\t RetInvalido = %d\t RetVacio = %d\n", retValido, retInvalido, retVacio);
+return 0;
+}
+
+--- EX05 ---
+
+
+int main ()
+{
+char valido[] = "DFGFDSHFD";
+char invalido[] = "DSSDAFfDSFADSF";
+char vacio[] = "\0";
+
+int retValido = ft_str_is_uppercase(valido);
+int retInvalido = ft_str_is_uppercase(invalido);
+int retVacio = ft_str_is_uppercase(vacio);
+
+printf("RetValido = %d\t RetInvalido = %d\t RetVacio = %d\n", retValido, retInvalido, retVacio);
+return 0;
+}
+
+--- EX06 ---
+
+
+int main ()
+{
+char valido[] = "DFGFDSHFD";
+char invalido[] = "45435";
+char vacio[] = "\0";
+
+int retValido = ft_str_is_printable(invalido);
+int retInvalido = ft_str_is_printable(invalido);
+int retVacio = ft_str_is_printable(vacio);
+
+printf("RetValido = %d\t RetInvalido = %d\t RetVacio = %d\n", retValido, retInvalido, retVacio);
+return 0;
+}
+
+
+--- EX 07 ---
+
+int main ()
+{
+char minusculas[] = "abcDEF";
+char minusnumeros[] = "45a4f3h5";
+char vacio[] = "\0";
+
+char *retMinusculas = ft_strupcase(minusculas);
+char *retMinunumeros = ft_strupcase(minusnumeros);
+char *retVacio = ft_strupcase(vacio);
+
+printf("Ret1 = %s\t Ret2 = %s\t RetVacio = %s\n", retMinusculas, retMinunumeros, retVacio);
+return 0;
+}
+
+--- EX 08 ---
+
+int main ()
+{
+char minusculas[] = "abcDEF";
+char minusnumeros[] = "45a4f3h5";
+char vacio[] = "\0";
+
+char *retMinusculas = ft_strlowcase(minusculas);
+char *retMinunumeros = ft_strlowcase(minusnumeros);
+char *retVacio = ft_strlowcase(vacio);
+
+printf("Ret1 = %s\t Ret2 = %s\t RetVacio = %s\n", retMinusculas, retMinunumeros, retVacio);
+return 0;
+}
+
+--- EX 09 ---
+
+int main ()
+{
+char try1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+char try2[] = "PePedas eq 234fdf &gdds";
+
+
+char *primerintento = ft_strcapitalize(try1);
+char *segundointento = ft_strcapitalize(try2);
+
+printf("Ret1 =%s\nRet2 =%s\t", primerintento, segundointento);
+return 0;
+}
+
+-- EX 10 ---
+
+int main()
+{
+
+char destino[] = "123456789";
+char src[] = "pepe";
+int result  = ft_strlcpy(destino,src, 6);
+      printf("return -> %d \n", result);
+   // printf("SRC --> %s\t DESTINO --> %s\n",src,destino );
+
+return 0;
+}
+//
+     // ------------- TEST -------------
+        for(int i = 0; i < size-1; i++)
+        {
+              printf("%c", dest[i]);
+        }
+        printf("\n");
+        // -------------------------------
+
+//
+--- EX 11 ---
+
+
+int main()
+{
+char test[] = "asdsds\ndfdfdf";
+ft_putstr_non_printable(test);
+}
+

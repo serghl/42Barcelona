@@ -1,0 +1,26 @@
+TODO NECESITA TESTEAR
+
+ft_isalpha - ok
+ft_isdigit - ok
+ft_isalnum - ok
+ft_isascii - ok
+ft_isprint - ok
+ft_strlen - ok
+ft_memset - ok
+ft_bzero - ok 
+ft_memcpy - ? 
+ft_strlcpy - ? 
+ft_strlcat - 
+
+// Main example
+
+int main()
+{
+/*
+int y = 75;
+int n = 64;
+printf("%i\n", ft_isalpha(y));
+printf("%i\n", ft_isalpha(n));
+return 0;
+*/
+}
